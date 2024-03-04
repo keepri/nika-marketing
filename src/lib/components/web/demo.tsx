@@ -1,6 +1,5 @@
 import { type ComponentOptions } from "component-register";
-import { noShadowDOM } from "solid-element";
-import { customElement } from "solid-element";
+import { customElement, noShadowDOM } from "solid-element";
 import { createSignal } from "solid-js";
 import { isServer } from "solid-js/web";
 
