@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Futura Light;
+    font-weight: light;
+    src: url('FuturaPTLight.otf');
+}

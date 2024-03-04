@@ -1,19 +1,17 @@
 import { type JSX, type ParentProps, children } from "solid-js";
 
 type Props = ParentProps<{
-    onClick: JSX.ChangeEventHandler<HTMLButtonElement, Event>;
+    client?: boolean;
 }>;
 
-// TODO this should not use solid-js ?
-export function Button(props: Props) {
+export function Button(
+    props: Props & JSX.ButtonHTMLAttributes<HTMLButtonElement>,
+) {
     const safeChildren = children(() => props.children);
 
-    return (
-        <button
-            class="text-white border rounded py-1 px-3 active:scale-95"
-            onClick={props.onClick}
-        >
-            {safeChildren()}
-        </button>
-    );
+    props.class =
+        (props.class ?? "") +
+        " border-2 rounded-full border-[#D6BEBE] py-3 px-7 active:scale-95";
+
+    return <button {...props}>{safeChildren()}</button>;
 }

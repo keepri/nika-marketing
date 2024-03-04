@@ -1,11 +1,23 @@
-import { BaseHtml } from "@/lib/components/base-html";
+import { Button } from "../components/button";
+import { Layout } from "../components/layout";
 
 export function HomePage() {
     return (
-        <BaseHtml>
-            <body>
-                <h1>Probably the best decision blabla am uitat...</h1>
-            </body>
-        </BaseHtml>
+        <Layout>
+            <main class="grid items-center min-h-screen">
+                <div>
+                    <h1 class="max-w-[25ch] font-bold text-5xl">
+                        Probably the best digital decision you're about to make.
+                    </h1>
+
+                    <p class="max-w-prose text-2xl my-8">
+                        We help small business owners establish a productive
+                        presence online and offline.
+                    </p>
+
+                    <Button>BOOK A DISCOVERY MEETING</Button>
+                </div>
+            </main>
+        </Layout>
     );
 }
