@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ESNext"
+        ],
+        "target": "ESNext",
+        "module": "ESNext",
+        "incremental": true,
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "types": [
+            "solid-js",
+            "solid-js/dom"
+        ],
+        /* JSX */
+        "jsx": "react-jsx",
+        "jsxImportSource": "solid-js",
+        /* Server-side JSX */
+        "jsxFactory": "Html.createElement",
+        "jsxFragmentFactory": "Html.Fragment",
+        "plugins": [
+            {
+                "name": "@kitajs/ts-html-plugin"
+            }
+        ],
+        "allowJs": true,
+        "checkJs": true,
+        /* Bundler mode */
+        "moduleResolution": "node",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
+        /* Linting */
+        "skipLibCheck": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowUnreachableCode": false,
+        "noImplicitAny": true
+    },
+    "include": [
+        "main.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "scripts/**/*.ts",
+        "**.*js",
+        "*.d.ts"
+    ]
+}
