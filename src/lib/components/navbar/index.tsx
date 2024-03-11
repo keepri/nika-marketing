@@ -15,7 +15,7 @@ export function Navbar() {
                 </a>
 
                 <ul class="flex justify-evenly items-center gap-2">
-                    <NavLink href="/services">SERVICES</NavLink>
+                    <NavLink href="#services">SERVICES</NavLink>
 
                     <NavLink href="/about">ABOUT</NavLink>
 
