@@ -1,20 +1,13 @@
 {
     "compilerOptions": {
-        "lib": [
-            "ESNext"
-        ],
+        "lib": ["ESNext"],
         "target": "ESNext",
         "module": "ESNext",
         "incremental": true,
         "paths": {
-            "@/*": [
-                "./src/*"
-            ]
+            "@/*": ["./src/*"]
         },
-        "types": [
-            "solid-js",
-            "solid-js/dom"
-        ],
+        "types": ["solid-js", "solid-js/dom"],
         /* JSX */
         "jsx": "react-jsx",
         "jsxImportSource": "solid-js",
