@@ -1,7 +1,6 @@
 import { cors } from "@elysiajs/cors";
 import { type HtmlOptions, html } from "@elysiajs/html";
 import { createEnv } from "@t3-oss/env-core";
-import "dotenv/config";
 import { z } from "zod";
 
 export const APP_NAME = "NIKA" as const;
